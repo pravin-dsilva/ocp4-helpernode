@@ -18,7 +18,7 @@ spec:
       containers:
         - name: nfs-client-provisioner
 {% if ansible_architecture == "ppc64le" %}
-          image: docker.io/miyamotoh/nfs-subdir-external-provisioner:latest
+          image: quay.io/pravin_dsilva/nfs-subdir-external-provisioner:latest
 {% else %}
           image: quay.io/external_storage/nfs-client-provisioner:latest
 {% endif %}
